@@ -1,0 +1,16 @@
+<mat-card *ngIf="product" class="card text-center" [routerLink]="['/product', product.id]">
+    <div>
+        <img  class="mx-auto" [src]="product.assets[0].source" width="200" height="200">
+    </div>
+    <div>
+        <p>{{product.name}}</p>
+    </div>
+
+    <div class="d-flex justify-content-around">
+        <span> {{product && product.variants && product.variants[0].price | currency}} </span>
+        <button class="cart-button">
+            <mat-icon>shopping_cart</mat-icon>
+        </button>
+    </div>
+</mat-card>
+

@@ -1,0 +1,12 @@
+.card {
+    max-width: 600px; 
+  }
+
+.card:hover{
+    cursor: pointer;
+}
+ 
+.cart-button {
+    background-color: transparent;
+    border: none;
+}
